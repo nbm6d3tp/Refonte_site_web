@@ -1,0 +1,97 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li class="nav-item"><a href="index.html" class="logoalign"><img src="../static/image/logo.png" class="navlogo">L'île de Bréhat</a></li>
+        <ul id="navleft" class="navbar-left">
+            <li class="nav-item has-dropdown"><a tabindex="0" onclick="clicked()" onfocus="focused()">Municipalité</a>
+                <ul class="dropdown sidegrid">
+                    <li><a href="">La mairie</a></li>
+                    <li><a href="">L'équipe municipale</a></li>
+                    <li><a href="">Conseils municipaux</a></li>
+                    <li><a href="">Conseil municipal des jeunes</a></li>
+                    <li><a href="">Jumelage Itterswiller</a></li>
+                    <li><a href="">Les commisions</a></li>
+                    <li><a href="">Buget et fiscalité</a></li>
+                    <li><a href="">Tarif communaux</a></li>
+                </ul>
+            </li>
+            <li class="nav-item has-dropdown"><a tabindex="0" onclick="clicked()" onfocus="focused()">Services Municipaux</a>
+            <ul class="dropdown gridMuni sidegrid" tabindex="0">
+                <li class="dropdown-item" tabindex="0">Formalités administratives
+                    <ul class="dropdown-under">
+                        <li><a href="">Papiers d'identité</a></li>
+                        <li><a href="">Paiements en ligne</a></li>
+                        <li><a href="">Elections : inscription</a></li>
+                        <li><a href="">Taxe de séjour</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-item" tabindex="0">Locations et Circulation
+                    <ul class="dropdown-under">
+                        <li><a href="">Location de salle</a></li>
+                        <li><a href="">Parking L'Arcouest</a></li>
+                        <li><a href="">Entrée/Sortie des véhicules</a></li>
+                        <li><a href="">Ports et mouillages</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-item" tabindex="0">Services
+                    <ul class="dropdown-under">
+                        <li><a href="">Technique</a></li>
+                        <li><a href="">Santé</a></li>
+                        <li><a href="">Pompiers</a></li>                    
+                        <li><a href="">Ecole- Cantine - Garderie</a></li>
+                        <li><a href="">Bréhat Infos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-item" tabindex="0">Déchets et Assainissement
+                    <ul class="dropdown-under">
+                        <li><a href="">Les Poubelles</a></li>
+                        <li><a href="">La déchetterie</a></li>
+                        <li><a href="">Assainissement et gestion de l’eau</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-item" tabindex="0">Enquêtes
+                    <ul>
+                        <li><a href="">Enquêtes Publiques</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+            <li class="nav-item has-dropdown "><a tabindex="0" onclick="clicked()" onfocus="focused()">Activités et Découvertes</a>
+            <ul class="dropdown gridA-D sidegrid">
+                <li class="dropdown-item" tabindex="0">Activités
+                    <ul class="dropdown-under">
+                        <li><a href="">Activités Culturelles</a></li>
+                        <li><a href="">Activités Sportives</a></li>
+                        <li><a href="">L'agenda</a></li>                    
+                        <li><a href="">Camping Municipal</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-item" tabindex="0">Découvertes
+                    <ul class="dropdown-under">
+                        <li><a href="">Office du tourisme</a></li> 
+                        <li><a href="">Histoire</a></li> 
+                        <li><a href="">Patrimoine</a></li>
+                        <li><a href="">Démographie</a></li>  
+                    </ul>
+                </li>
+            </ul>
+            </li>
+
+            <li class="nav-item"><a href ="index_en.html" tabindex="0" onclick="clicked()" onfocus="focused()">EN</a></li>
+
+        </ul>
+        
+        <ul class="navbar-right">
+            <li class="nav-item searchbar">
+                <i id="search" class="fas fa-search"></i>
+                <input id="search-input" type="text" placeholder="Search" onfocus="highlight()" onblur="dehighlight()">
+            </li>
+            <li class="nav-item">
+                <a href="./contact.html" class="logoalign"><i class="far fa-envelope" id="enveloppe"></i>Contact</a>
+            </li> 
+            <li class="nav-item">
+                <a id="btnsidenav" onclick="showsidenav()"><i class="fas fa-bars sidenav"></i></a>
+            </li> 
+        </ul>
+        
+    </ul>
+</nav>

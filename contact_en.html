@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../style/contactstyle.css" rel="stylesheet" type="text/css"/>
+        <link href="../style/gstyle.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="static/image/slogo.ico" type="image/x-icon">
+        <title>Municipality of Bréhat Island - Contact</title>
+        <script src="https://kit.fontawesome.com/d18c8355bf.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <!--Navigation bar-->
+            <script id="replace_with_navbar" type="module"src="./script/nav_en.js" defer ></script>
+            <!--end of Navigation bar-->
+            <button onclick="topFunction()" id="scrollTop" title="Go to top"><i class="fas fa-chevron-up"></i></button> 
+            
+
+            <!-- Modal-->
+            <div id="myModal" class="modal">
+        <div id="myModalContent" class="modal-content">
+            <div>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="content">
+               
+                <div>
+                    <p>Inscrivez-vous à notre newsletter pour suivre nos actualités!</p>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <input type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required="">
+                    <label id="condition">
+                        Veuillez renseigner votre adresse email pour vous inscrire. Ex. : abc@xyz.com
+                    </label>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <input type="checkbox" id="accepte" name="accepte" style="size: 50px;">
+                    <label class="checkboxtext" for="accepte"><p>J'accepte de recevoir vos e-mails et confirme avoir pris connaissance de votre <a href="https://www.iledebrehat.fr/mentions-legales-et-protection-des-donnees/" target="_blank">politique de confidentialité et mentions légales</a>.</p></label>
+                </div>
+                <div>
+                    <label id="condition">
+                        Vous pouvez vous désinscrire à tout moment en cliquant sur le lien présent dans nos emails.
+                    </label>
+                </div>
+                <div class="wrap">
+                    <button class="button">S'incrire</button>
+                </div>
+            </div>
+        </div>
+        
+            </div>
+            <!--end of Modal--> 
+        </header>
+     
+        <div id="page">
+            
+        <h1>Contact</h1>
+        <h2>We remain at your disposal for all your requests for information</h2>
+
+        <div class="item">
+
+            <div class="box">
+                <div class="title">Join us</div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21006.147279595778!2d-3.001236!3d48.843556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2eca6f5993e3e1!2sMairie%20de%20Br%C3%A9hat!5e0!3m2!1sfr!2sfr!4v1635586940825!5m2!1sfr!2sfr" id="carte" allowfullscreen="" loading="lazy"></iframe>
+                <div>Crec’h Briand, 22870 Île-de-Bréhat</div>
+            </div>    
+    
+            <div class="box">
+                <div class="title">Call us</div>
+                <div class="tel">
+                    <div>From a mobile<button class="btn" style="margin-left: 1em;">02 96 20 00 36</button></div>
+                    <div> ⚠ In case of emergency only outside opening hours<button class="btn" style="margin-left: 1em;">06 17 41 58 17</button></div>
+                </div>
+                <div class="title">Schedule</div>
+                <p>
+                    Monday : 9h to 12h and 14h to 16h<br>
+                    Tuesday : 9h to 12h and 14h to 16h<br>
+                    Wednesday : 9h to 12h<br>
+                    Thursday : 9h to 12h<br>
+                    Friday : 9h to 12h and 14h to 16h<br>
+                    Saturday : closed <br>
+                    Sunday : closed <br>
+                </p>
+            </div>
+
+            <div class="box">
+                <form class="form">
+                    <div class="title">Write us</div>
+                    <p>All fields are required</p><br/>
+                    <div><div>Name</div><input class="form-control" type="text" placeholder="Name"></div>
+                    <div><div>Email</div><input id="email" class="form-control" type="Email" placeholder="Email"></div>
+                    <div><div>Telephone</div><input class="form-control" type="tel" placeholder="Telephone"></div>
+                    <div><div>Message</div><textarea class="form-control" placeholder="Message"></textarea></div>
+                    <input class="btn" type="submit" value="Send">
+                </form>
+            </div>
+
+        </div>
+        
+        </div>
+        
+        <script id="replace_with_footer" type="module" src="./script/footer_en.js" defer></script>
+        <script src="./index.js" defer></script>
+    </body>
+</html>

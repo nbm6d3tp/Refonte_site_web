@@ -1,0 +1,256 @@
+<!DOCTYPE html>  
+
+<html>  
+
+<head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style/gstyle.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="./static/image/slogo.ico" type="image/x-icon">
+    <title>Municipality of Bréhat Island</title>
+    <script src="https://kit.fontawesome.com/d18c8355bf.js" crossorigin="anonymous"></script>
+</head>  
+
+<body >  
+  <header>
+    <!--Navigation bar-->
+    <script id="replace_with_navbar" type="module"src="./script/nav_en.js" defer ></script>
+    <!--end of Navigation bar--> 
+
+    <!-- scrollTop button -->
+    <button onclick="topFunction()" id="scrollTop" title="Go to top"><i class="fas fa-chevron-up"></i></button> 
+    <!-- end scrollTop -->
+    
+    <div class="spacer forward">
+        <h1 id="introtitle">Welcome to Bréhat Island</h1>
+    </div>
+    
+
+    <!-- Modal-->
+    <div id="myModal" class="modal">
+        <div id="myModalContent" class="modal-content">
+            <div>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="content">
+               
+                <div>
+                    <p>Subscribe to our newsletter to follow our news!</p>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <input type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required="">
+                    <label id="condition">
+                        Please enter your email address to register. Ex .: abc@xyz.com
+                    </label>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <input type="checkbox" id="accepte" name="accepte" style="size: 50px;">
+                    <label class="checkboxtext" for="accepte"><p>I agree to receive your emails and confirm that I have read your <a href="https://www.iledebrehat.fr/mentions-legales-et-protection-des-donnees/" target="_blank">privacy policy and legal notices</a>.</p></label>
+                </div>
+                <div>
+                    <label id="condition">
+                        You can unsubscribe at any time by clicking on the link in our emails.
+                    </label>
+                </div>
+                <div class="wrap">
+                    <button class="button">Register</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--end of Modal-->
+
+
+    <!--Meteo--> 
+    <a class="weatherwidget-io" href="https://forecast7.com/en/48d85n3d00/ile-de-brehat/" data-label_1="ÎLE-DE-BRÉHAT" data-label_2="WEATHER" data-theme="pure" data-basecolor="white" data-highcolor="#C41010" data-lowcolor="#03256C" data-suncolor="#C41010" data-cloudcolor="#434343" data-raincolor="#348AA7" >ÎLE-DE-BRÉHAT WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    <!--End of meteo--> 
+
+    <!--Carousel-->
+    <div class="galleryContainer">
+        <div class="slideShowContainer">
+            <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+            <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+            <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+            <div class="imageHolder">
+                <img src="static/image/img_1.jpg">1366X768
+                <p class="captionText"></p>
+            </div>
+            <div class="imageHolder">
+                <img src="static/image/img_2.jpg">
+                <p class="captionText"></p>
+            </div>
+            <div class="imageHolder">
+                <img src="static/image/img_3.jpg">
+                <p class="captionText"></p>
+            </div>
+            <div class="imageHolder">
+                <img src="static/image/img_4.jpg">
+                <p class="captionText"></p>
+            </div>
+        </div>
+        <div id="dotsContainer"></div>
+    </div>
+    <!--end of Carousel-->  
+  </header>
+
+    <!-- Actu -->
+    <div id="page-accueil">
+
+        <div><h1 class="title1">News</h1></div>
+
+        <div class="container-accueil">
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">COVID-19</a></div>
+                <h4>Third dose vaccination session<br></h4>
+                <p class="text-actu">On Thursday 28th October, on the afternoon, a new session...</p>
+                <p class="text-actu">Last update: 10/21/2021<br></p>
+                <div class="lire"><a href=""><br><br>Read more →</a></div>
+            </div>
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">Municipal news</a></div>
+                <h4>Garbage dumpster failure<br></h4>
+                <p class="text-actu">Due to a garbage dumpster failure, the rubbish collection...</p>
+                <p class="text-actu">Last update: 10/29/2021<br></p>
+                <div class="lire"><a href=""><br><br>Read more →</a></div>
+            </div>
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">Municipal news</a></div>
+                <h4>Press release from the mayor of Île de Bréhat<br></h4>
+                <p class="text-actu">To improve public transport on the island...</p>
+                <p class="text-actu">Last update: 10/19/2021</p>
+                <div class="lire"><a href=""><br><br>Read more →</a></div>
+            </div>
+        </div>
+
+        <div class="btn-actu"><a href="">See all the news →</a></div>
+
+        <div class="spacer-page"></div>
+        <div>
+            <h1 class="title1">Brehat Info</h1>
+            <h4 style="color:#fff; text-align:center; margin-bottom:1rem;">The newsletter</h4>
+        </div>
+        
+        <div class="container-accueil">
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">Brehat Info</a></div>
+                <h4>Festival : Les Scènes de Bréhat<br></h4>
+                <p class="text-actu">Delighted to have made the first Les Scènes de Bréhat festival possible...</p>
+                <p class="text-actu">Last update: 07/27/2021<br></p>
+                <div class="lire"><a href=""><br><br>Read more →</a></div>
+            </div>
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">Brehat Info</a></div>
+                <h4>Survey: what happens to your bio-waste?<br></h4>
+                <p class="text-actu">Most of our kitchen waste is nowadays collected...</p>
+                <p class="text-actu">Last update: 06/09/2021<br></p>
+                <div class="lire"><a href=""><br><br>Read more →</a></div>
+            </div>
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">Brehat Info</a></div>
+                <h4>Fighting the Asian hornet<br></h4>
+                <p class="text-actu">The life cycle of the Asian hornet...</p>
+                <p class="text-actu">Last update: 05/10/2021</p>
+                <div class="lire"><a href=""><br><br>Read more →</a></div>
+            </div>
+        </div>
+        
+        <div class="btn-actu"><a href="">All the information →</a></div>
+
+    </div>
+    <!-- end of Actus -->
+    
+ 
+    <!--L'agenda--> 
+    <div id="page-accueil">
+        <div><h1 class="title1">Agenda</h1></div>
+
+        <div class="container-accueil">
+            <div class="box-agend">
+                <div class="div-image-agend">
+                    <img class="image-agend" src="static/image/halloween.jpg">
+                    <div class="tag">
+                        <p><b style="font-size: 150%;">31</b> October, 2021</p>
+                        <p style="font-size: 14px"> Sunday</p>
+                </div>
+                <div style="padding-left: 7px;padding-top: 5px;display: flex;flex-direction: row;position: relative;">
+                    <div>
+                        <p class="sujet"><b><a>Pumpkin workshops</a></b></p>
+                        <p>11:00 - 13:00</p>
+                    </div>
+                    <div>
+                        <button class="btn1">
+                            <span>
+                                + INFOS
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+
+            <div class="box-agend">
+                <div class="div-image-agend">
+                    <img class="image-agend" src="static/image/film_documentaire.jpg">
+                    <div class="tag">
+                        <p><b style="font-size: 150%;">13</b> November, 2021</p>
+                        <p style="font-size: 14px"> Saturday</p>
+                </div>
+                <div style="padding-left: 7px;padding-top: 5px;display: flex;flex-direction: row;position: relative;">
+                    <div>
+                        <p class="sujet"><b><a>Documentary film month</a></b></p>
+                        <p>15:00 - 22:30</p>
+                    </div>
+                    <div>
+                        <button class="btn1">
+                            <span>
+                                + INFOS
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+
+
+            <div class="box-agend">
+                <div class="div-image-agend">
+                    <img class="image-agend" src="static/image/Belote.png">
+                    <div class="tag">
+                        <p><b style="font-size: 150%;">03</b> December, 2021</p>
+                        <p style="font-size: 14px"> Friday</p>
+                </div>
+                <div style="padding-left: 7px;padding-top: 5px;display: flex;flex-direction: row;position: relative;">
+                    <div>
+                        <p class="sujet"><b><a>Belote contest</a></b></p>
+                        <p>20:00 - 23:00</p>
+                    </div>
+                    <div>
+                        <button class="btn1">
+                            <span>
+                                + INFOS
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="btn-actu"><a href="">All the agendas →</a></div>
+    </div>
+    <!--Fin de l'agenda-->
+
+    <!--Footer-->
+    <script id="replace_with_footer" type="module" src="./script/footer_en.js" defer></script>
+    <!--end of Footer--> 
+    <script src="./index.js" defer></script>
+</body>
+</html>

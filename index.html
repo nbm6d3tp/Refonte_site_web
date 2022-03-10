@@ -1,0 +1,256 @@
+<!DOCTYPE html>  
+
+<html>  
+
+<head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style/gstyle.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="./static/image/slogo.ico" type="image/x-icon">
+    <title>Commune de l'Ile-de-Bréhat</title>
+    <script src="https://kit.fontawesome.com/d18c8355bf.js" crossorigin="anonymous"></script>
+</head>  
+
+<body >  
+  <header>
+    <!--Navigation bar-->
+    <script id="replace_with_navbar" type="module"src="./script/nav.js" defer ></script>
+    <!--end of Navigation bar--> 
+
+    <!-- scrollTop button -->
+    <button onclick="topFunction()" id="scrollTop" title="Go to top"><i class="fas fa-chevron-up"></i></button> 
+    <!-- end scrollTop -->
+    
+    <div class="spacer forward">
+        <h1 id="introtitle">Bienvenue sur l’Ile de Bréhat</h1>
+    </div>
+    
+
+    <!-- Modal-->
+    <div id="myModal" class="modal">
+        <div id="myModalContent" class="modal-content">
+            <div>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="content">
+               
+                <div>
+                    <p>Inscrivez-vous à notre newsletter pour suivre nos actualités!</p>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <input type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required="">
+                    <label id="condition">
+                        Veuillez renseigner votre adresse email pour vous inscrire. Ex. : abc@xyz.com
+                    </label>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <input type="checkbox" id="accepte" name="accepte" style="size: 50px;">
+                    <label class="checkboxtext" for="accepte"><p>J'accepte de recevoir vos e-mails et confirme avoir pris connaissance de votre <a href="https://www.iledebrehat.fr/mentions-legales-et-protection-des-donnees/" target="_blank">politique de confidentialité et mentions légales</a>.</p></label>
+                </div>
+                <div>
+                    <label id="condition">
+                        Vous pouvez vous désinscrire à tout moment en cliquant sur le lien présent dans nos emails.
+                    </label>
+                </div>
+                <div class="wrap">
+                    <button class="button">S'incrire</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--end of Modal-->
+
+    <!--Meteo--> 
+    <a class="weatherwidget-io" href="https://forecast7.com/fr/48d85n3d00/ile-de-brehat/" data-label_1="ÎLE-DE-BRÉHAT" data-font="Poppins" data-theme="pure" data-basecolor="white" data-highcolor="#C41010" data-lowcolor="#03256C" data-suncolor="#C41010" data-cloudcolor="#434343" data-raincolor="#348AA7" >ÎLE-DE-BRÉHAT</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    <!--End of meteo--> 
+
+    <!--Carousel-->
+    <div class="galleryContainer">
+        <div class="slideShowContainer">
+            <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+            <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+            <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+            <div class="imageHolder">
+                <img src="static/image/img_1.jpg">1366X768
+                <p class="captionText"></p>
+            </div>
+            <div class="imageHolder">
+                <img src="static/image/img_2.jpg">
+                <p class="captionText"></p>
+            </div>
+            <div class="imageHolder">
+                <img src="static/image/img_3.jpg">
+                <p class="captionText"></p>
+            </div>
+            <div class="imageHolder">
+                <img src="static/image/img_4.jpg">
+                <p class="captionText"></p>
+            </div>
+        </div>
+        <div id="dotsContainer"></div>
+    </div>
+    <!--end of Carousel-->  
+  </header>
+
+  <!--A la une--> 
+    <div id="page-accueil">
+
+        <div><h1 class="title1">À la une</h1></div>
+
+        <div class="container-accueil">
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">COVID-19</a></div>
+                <h4>Séance de vaccination 3ème dose<br></h4>
+                <p class="text-actu">Le jeudi 28 octobre, l’après-midi, une nouvelle séance...</p>
+                <p class="text-actu">Mis à jour le 21/10/2021<br></p>
+                <div class="lire"><a href=""><br><br>Lire la suite →</a></div>
+            </div>
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">Actu municipales</a></div>
+                <h4>Panne de la benne à ordures ménagères<br></h4>
+                <p class="text-actu">À la suite d'une panne sur la benne, le ramassage...</p>
+                <p class="text-actu">Mis à jour le 29/10/2021<br></p>
+                <div class="lire"><a href=""><br><br>Lire la suite →</a></div>
+            </div>
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">Actu municipales</a></div>
+                <h4>Communiqué du maire de l'Île de Bréhat<br></h4>
+                <p class="text-actu">Pour améliorer le transport en commun de l’île...</p>
+                <p class="text-actu">Mis à jour le 19/10/2021</p>
+                <div class="lire"><a href=""><br><br>Lire la suite →</a></div>
+            </div>
+        </div>
+        
+        <div class="btn-actu"><a href="">Voir toutes les actualités →</a></div>
+
+        <div class="spacer-page"></div>
+        <div>
+            <h1 class="title1">Bréhat Infos</h1>
+            <h4 style="color:#fff; text-align:center; margin-bottom:1rem;">Le bulletin d'informations</h4>
+        </div>
+        
+
+        <div class="container-accueil">
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">Bréhat Infos</a></div>
+                <h4>Festival Les Scènes de Bréhat<br></h4>
+                <p class="text-actu">Ravie d’avoir permis la réalisation du premier festival Les Scènes de Bréhat...</p>
+                <p class="text-actu">Mis à jour le 27/07/2021<br></p>
+                <div class="lire"><a href=""><br><br>Lire la suite →</a></div>
+            </div>
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">Bréhat Infos</a></div>
+                <h4>Enquête : que deviennent vos biodéchets ?<br></h4>
+                <p class="text-actu">Nos déchets de cuisine sont aujourd’hui en grande partie collectés...</p>
+                <p class="text-actu">Mis à jour le 09/06/2021<br></p>
+                <div class="lire"><a href=""><br><br>Lire la suite →</a></div>
+            </div>
+            <div class="box-actu">
+                <div class="btn-categ"><a href="">Bréhat Infos</a></div>
+                <h4>Lutte contre le frelon asiatique<br></h4>
+                <p class="text-actu">Le cycle de vie du frelon asiatique...</p>
+                <p class="text-actu">Mis à jour le 10/05/2021</p>
+                <div class="lire"><a href=""><br><br>Lire la suite →</a></div>
+            </div>
+        </div>
+        
+        <div class="btn-actu"><a href="">Voir toutes les infos →</a></div>
+
+    </div>
+
+    <!--Fin a la une--> 
+    
+    <!--L'agenda--> 
+    <div id="page-accueil">
+        <div><h1 class="title1">L'agenda</h1></div>
+
+        <div class="container-accueil">
+            <div class="box-agend">
+                <div class="div-image-agend">
+                    <img class="image-agend" src="static/image/halloween.jpg">
+                    <div class="tag">
+                        <p><b style="font-size: 150%;">31</b> Octobre, 2021</p>
+                        <p style="font-size: 14px"> Dimanche</p>
+                </div>
+                <div style="padding-left: 7px;padding-top: 5px;display: flex;flex-direction: row;position: relative;">
+                    <div>
+                        <p class="sujet"><b><a>Ateliers Citrouilles</a></b></p>
+                        <p>11:00 - 13:00</p>
+                    </div>
+                    <div>
+                        <button class="btn1">
+                            <span>
+                                + D'INFOS
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+
+            <div class="box-agend">
+                <div class="div-image-agend">
+                    <img class="image-agend" src="static/image/film_documentaire.jpg">
+                    <div class="tag">
+                        <p><b style="font-size: 150%;">13</b> Novembre, 2021</p>
+                        <p style="font-size: 14px"> Samedi</p>
+                </div>
+                <div style="padding-left: 7px;padding-top: 5px;display: flex;flex-direction: row;position: relative;">
+                    <div>
+                        <p class="sujet"><b><a>Le mois du film documentaire</a></b></p>
+                        <p>15:00 - 22:30</p>
+                    </div>
+                    <div>
+                        <button class="btn1">
+                            <span>
+                                + D'INFOS
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+
+
+            <div class="box-agend">
+                <div class="div-image-agend">
+                    <img class="image-agend" src="static/image/Belote.png">
+                    <div class="tag">
+                        <p><b style="font-size: 150%;">03</b> Décembre, 2021</p>
+                        <p style="font-size: 14px"> Vendredi</p>
+                </div>
+                <div style="padding-left: 7px;padding-top: 5px;display: flex;flex-direction: row;position: relative;">
+                    <div>
+                        <p class="sujet"><b><a>Concours de belote</a></b></p>
+                        <p>20:00 - 23:00</p>
+                    </div>
+                    <div>
+                        <button class="btn1">
+                            <span>
+                                + D'INFOS
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="btn-actu"><a href="">Voir toutes les agendas →</a></div>
+    </div>
+    <!--Fin de l'agenda--> 
+ 
+    <!--Footer-->
+    <script id="replace_with_footer" type="module" src="./script/footer.js" defer></script>
+    <!--end of Footer--> 
+    <script src="./index.js" defer></script>
+</body>
+</html>
